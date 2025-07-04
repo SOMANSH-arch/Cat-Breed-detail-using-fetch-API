@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+}
+
+/* Header section */
+header {
+  padding: 0 40px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.logo-area .logo {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d1d5db;
+}
+
+/* Main Section */
+.main-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.card h1 {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search-Box {
+  padding: 12px;
+  font-size: 16px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+#go-Box {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  transition: background-color 0.3s ease;
+}
+
+#go-Box:hover {
+  background-color: #2563eb;
+}
+
+.result-style {
+  font-size: 18px;
+  color: #1f2937;
+  margin: 12px 0;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Optional fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text {
+  animation: fadeInUp 0.4s ease-in-out;
+}
+.info p {
+  font-size: 16px;
+  color: #374151;
+  margin: 10px 0;
+}
+/* Styled output for breed result */
+footer {
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: 40px;
+}
+footer p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Foote*
